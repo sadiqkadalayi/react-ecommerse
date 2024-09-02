@@ -1,0 +1,59 @@
+.head-cont-1 {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.head-cont-num {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    font-size: 0.8rem;
+}
+
+.head-cont-para-p{
+    font-size: 0.6rem;
+    margin-left: 0.5rem;
+}
+.head-cont-number {
+    margin-left: 0.6rem;
+    
+}
+
+.head-cont-number span a {
+    color: gray;
+    text-decoration: none;
+}
+
+.login-cred a {
+    color: #164b8b;
+    text-decoration: none;
+    margin-left: 0.5rem;
+}
+
+.head-cont-num i {
+    margin-top: 0.2rem;
+}
+
+.Sign-cred a{
+    color: #164b8b;
+    text-decoration: none;
+    margin-left: 0.5rem;
+}
+
+.Sign-cred a:hover , .login-cred a:hover , .head-cont-number span a:hover{
+    color: red;
+}
+
+.login-btn{
+    border: 1px solid #164b8b;
+    border-radius: 0.3rem;
+    padding: 0 0.5rem 0.3rem 0.5rem;
+
+}
+
+.sign-btn{
+    border: 1px solid #164b8b;
+    border-radius: 0.3rem;
+    padding: 0 0.5rem 0.3rem 0.5rem;
+
+}

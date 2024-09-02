@@ -1,0 +1,29 @@
+.recent-list {
+    display: flex;
+    align-items: center;
+}
+.recent-list a {
+    text-decoration: none;
+    color: gray;
+    font-size: 0.8rem;
+    margin-left: 0.3rem;
+}
+
+.recent-list a:hover {
+    color: red;
+}
+
+.cart i {
+    font-size: 1.5rem;
+    color: black;
+   
+}
+
+.cart a {
+    text-decoration: none;
+    color: grey;
+}
+
+.cart a:hover , .cart i:hover {
+    color: red;
+}
