@@ -1,16 +1,37 @@
 .recent-list {
     display: flex;
     align-items: center;
+    gap: 10px;
+    
 }
 .recent-list a {
     text-decoration: none;
     color: gray;
     font-size: 0.8rem;
-    margin-left: 0.3rem;
+    /* margin-left: 0.3rem; */
 }
 
 .recent-list a:hover {
     color: red;
+}
+
+.cart {
+    display: flex;
+}
+
+/* @media screen and (min-device-width: 350px) and (max-device-width: 712) {
+    .cart {
+        margin-left: 10rem;
+    }
+} */
+
+@media screen and (min-width: 350px) and (max-width:991px) {
+    .cart {
+        margin-left: 2rem;
+    }
+    .log span {
+        font-size: 12px;
+    }
 }
 
 .cart i {

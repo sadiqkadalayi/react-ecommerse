@@ -57,3 +57,9 @@
     padding: 0 0.5rem 0.3rem 0.5rem;
 
 }
+
+@media screen and (min-width: 350px) and (max-width: 991px) {
+    .addr {
+        display: none;
+    }
+}

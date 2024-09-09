@@ -6,10 +6,10 @@ function HeadLogo() {
     <>
       <div className="container mt-1">
         <div className="row">
-          <div className="col-2">
-            <h4>
-              <strong>E-Commerse</strong>
-            </h4>
+          <div className="col-2 log">
+            <span>
+              <strong>E-Commerse<br/>Application</strong>
+            </span>
           </div>
           <div className="col-7">
             <div class="input-group">
@@ -20,6 +20,7 @@ function HeadLogo() {
           <div className="col-3">
             <div className="row">
                 <div className="col-5 recent-list">
+                  
                 <i class="fa fa-list-alt" aria-hidden="true"></i>
                 <span><a href="">Recently Viewed</a></span>
                 </div>
