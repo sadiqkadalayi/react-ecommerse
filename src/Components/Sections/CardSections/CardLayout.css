@@ -1,0 +1,9 @@
+.img-size {
+    height: 15rem;
+    width: 100%;
+    object-fit: scale-down;
+}
+
+.price-css {
+    color: red;
+}

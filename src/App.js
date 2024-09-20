@@ -1,16 +1,19 @@
-import Footer from './Components/Footer/Footer';
-import HeadLogo from './Components/NavBar/HeadLogo';
-import HeadSection from './Components/NavBar/HeadSection';
-import HeadSection2 from './Components/NavBar/HeadSection2';
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import RootLayout from "./Components/RootLayout";
+import Jwellery from "./Components/Sections/JwellerySection/Jwellery";
 
 function App() {
   return (
     <>
-      <HeadSection/>
-      <HeadSection2/>
-      <HeadLogo/>
-
-      <Footer/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/*" element={<RootLayout/>}>
+              <Route path="*" element={<Jwellery/>}></Route>
+              <Route path="*" element={<Jwellery/>}></Route>
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

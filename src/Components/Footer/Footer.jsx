@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <>
-      <div className="conatiner mt-5 bg-body-tertiary"><hr />
+      <div className="conatiner bg-body-tertiary"><hr />
         <div className="row d-flex justify-content-center text-center">
           <div className="col-6">
             <p>

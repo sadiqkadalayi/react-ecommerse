@@ -1,0 +1,9 @@
+.menu-text{
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+}
+
+.menu-text:hover {
+    color: red;
+}
