@@ -24,7 +24,7 @@ function WomansClothing() {
                 <div className="row">
                 <div className="col-4 d-flex">
                     <div className='d-flex gap-3'>
-                    {womansClothing.map((item) => <CardLayout data={item} key={item} />)}
+                    {womansClothing.map((item) => <CardLayout data={item} key={item.id} />)}
                     </div>
                     </div>
                 </div>

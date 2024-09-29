@@ -31,7 +31,7 @@ function Jwellery() {
             </div>
             <div className="col-4 d-flex">
                 <div className='d-flex gap-3'>
-                        {jwelley.map((item)=><CardLayout data={item} key={item}/>)}  
+                        {jwelley.map((item)=><CardLayout data={item} key={item.id}/>)}  
                 </div>
             </div>
         </div>

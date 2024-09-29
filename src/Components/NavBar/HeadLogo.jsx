@@ -25,7 +25,7 @@ function HeadLogo() {
                 <span><a href="">Recently Viewed</a></span>
                 </div>
                 <div className="col-4 cart">
-                <a href=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> cart</a>
+                <a href=""><i className="fa fa-cart-arrow-down" aria-hidden="true"></i> cart</a>
                 </div>
                 </div>
           </div>

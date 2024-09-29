@@ -30,7 +30,7 @@ function Electronics() {
                 <div className="row">
                 <div className="col-4 d-flex">
                     <div className='d-flex gap-3'>
-                    {electronics.map((item) => <CardLayout data={item} key={item} />)}
+                    {electronics.map((item) => <CardLayout data={item} key={item.id} />)}
                 </div>
                 </div>
                 </div>
