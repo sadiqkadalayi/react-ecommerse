@@ -21,7 +21,9 @@ function CardLayout({data}) {
           {descchk}
         </Card.Text>
         <Card.Title className='price-css'>{data.price + ' USD'} </Card.Title>
-        <Button variant="primary">Add</Button>
+        
+        <Button variant="primary">Add</Button> 
+        
       </Card.Body>
     </Card>
     

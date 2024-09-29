@@ -13,7 +13,7 @@ function WomansClothing() {
     }
     useEffect(()=>{
         getWomansClothing();
-    },)
+    },[])
 
   return (
     <>
