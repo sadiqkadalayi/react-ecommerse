@@ -10,6 +10,7 @@ import Jwellery from "./Sections/JwellerySection/Jwellery";
 import Electronics from "./Sections/Electronics/Electronics";
 import MensClothing from "./Sections/CardSections/Men'sClothing/MensClothing";
 import WomansClothing from "./Sections/CardSections/WomansClothing/WomansClothing";
+import Single from "./extras/singlePage/Single";
 
 function RootLayout() {
   return (
@@ -18,6 +19,7 @@ function RootLayout() {
       <HeadSection2 />
       <HeadLogo />
       <MenuBar />
+      
         <Jwellery/>
         <hr />
         <Electronics/>
@@ -25,7 +27,7 @@ function RootLayout() {
         <MensClothing/>
         <hr />
         <WomansClothing/>
-        <Outlet/>
+        
         
       <FooterMain />
       <Footer />

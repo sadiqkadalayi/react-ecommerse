@@ -6,7 +6,7 @@ function Counter() {
     <>
     <div className='d-flex counter-main'>
         
-        &nbsp;&nbsp;&nbsp; <input type="number" max="4"/>
+        &nbsp;&nbsp;&nbsp; <input type="number" max="5" min="0"/>
         
     </div>
     </>
