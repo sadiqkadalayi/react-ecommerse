@@ -3,6 +3,7 @@ import axios from 'axios';
 import MenuCont from "./Menu/MenuCont";
 import './Menubar.css';
 import { useNavigate } from "react-router-dom";
+import data from '../../Data/categories.json'
 
 function MenuBar() {
     const [menu, setMenu] = useState([]);
@@ -35,6 +36,8 @@ function MenuBar() {
                         {menu.map((category) => (
                             <MenuCont data={category} onClick={() => handleMenuClick(category)} key={category} />
                         ))}
+                        {/* {data.map((dat)=> <MenuCont data={dat} key={dat.id}/>)} */}
+                        
                     </div>
                 </div>
             </div>
