@@ -7,3 +7,7 @@
 .price-css {
     color: red;
 }
+
+.curoser {
+    cursor: pointer;
+}

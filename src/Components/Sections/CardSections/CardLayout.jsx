@@ -20,19 +20,19 @@ function CardLayout({ data }) {
   return (
     <>
       <div className="col-3">
-        <Card style={{ width: "18rem" }} onClick={goSingle}>
-          <Card.Img className="img-size" variant="top" src={data.image} />
+        <Card style={{ width: "18rem" }} >
+          <Card.Img className="img-size curoser" variant="top" src={data.image} onClick={goSingle} />
           <Card.Body>
-            <Card.Title>{titlechk}</Card.Title>
-            <Card.Text>{descchk}</Card.Text>
-            <Card.Title className="price-css">
+            <Card.Title className="curoser" onClick={goSingle}>{titlechk}</Card.Title>
+            <Card.Text className="curoser" onClick={goSingle}>{descchk}</Card.Text>
+            <Card.Title className="price-css text-danger">
               {data.price + " USD"}{" "}
             </Card.Title>
 
             <div className="row">
               <form action="">
                 <div className="d-flex">
-                  <Button variant="primary">Add</Button>
+                  <Button variant="primary btn-sm">Add</Button>
                   <Counter></Counter>
                 </div>
               </form>

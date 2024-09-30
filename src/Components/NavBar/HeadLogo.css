@@ -49,3 +49,8 @@
 .cart a:hover , .cart i:hover {
     color: red;
 }
+
+.log a {
+    text-decoration: none;
+    color: black;
+}

@@ -1,5 +1,7 @@
 import React from 'react'
 import './HeadSection2.css'
+import { Link } from 'react-router-dom'
+import Login from '../Login/Login'
 
 function HeadSection2() { 
   return (
@@ -27,10 +29,10 @@ function HeadSection2() {
             <div className="col-6">
                 <div className="row justify-content-center">
                 <div className="col-3 d-flex login-cred">
-                    <button className='btn btn-primary btn-sm'>Login</button>
+                    <Link to={'Login'}><button className='btn btn-primary btn-sm'>Login</button></Link>
                 </div>
                 <div className="col-6 d-flex  Sign-cred">
-                <button className='btn btn-primary btn-sm'>Sign Up</button>
+                <Link to={'Sign'}><button className='btn btn-primary btn-sm'>Sign Up</button></Link>
                 </div>
                 </div>
             </div>

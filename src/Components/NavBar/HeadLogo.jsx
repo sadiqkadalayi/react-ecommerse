@@ -1,5 +1,6 @@
 import React from "react";
 import "./HeadLogo.css";
+import { Link } from "react-router-dom";
 
 function HeadLogo() {
   return (
@@ -7,9 +8,9 @@ function HeadLogo() {
       <div className="container mt-1">
         <div className="row">
           <div className="col-md-2 log">
-            <span className="justify-content-center align-middle">
-              <strong>E-Commerse Application</strong>
-            </span>
+          <Link to={'/'}>
+          <span className="justify-content-center align-middle"><strong>E-Commerse Application</strong></span>
+          </Link>
           </div>
           <div className="col-md-7">
             <div className="input-group">

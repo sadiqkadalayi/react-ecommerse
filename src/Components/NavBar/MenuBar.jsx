@@ -1,36 +1,45 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
-import axios from 'axios'
+import React, { useEffect, useState } from "react";
+import axios from 'axios';
 import MenuCont from "./Menu/MenuCont";
-import './Menubar.css'
+import './Menubar.css';
+import { useNavigate } from "react-router-dom";
 
 function MenuBar() {
-
     const [menu, setMenu] = useState([]);
+    const navigate = useNavigate();
 
     const getMenu = async () => {
-        const res = await axios('https://fakestoreapi.com/products/categories');
-        setMenu(res.data)
-        console.log(res);
-        
-    }
-useEffect(()=>{
-    getMenu();
-},[])
+        try {
+            const res = await axios('https://fakestoreapi.com/products/categories');
+            setMenu(res.data);
+            console.log(res);
+        } catch (error) {
+            console.error("Error fetching menu data:", error);
+        }
+    };
 
-  return (
-    <>
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-12 col-md-6 col-sm-6">
-            <div className="main-menu">
-                {menu.map((menu)=> <MenuCont data={menu} key={menu}/> )}                
+    const handleMenuClick = (category) => {
+        navigate(`/SingleSection/${category}`);
+        console.log(category);
+    };
+
+    useEffect(() => {
+        getMenu();
+    }, []);
+
+    return (
+        <div className="container">
+            <div className="row">
+                <div className="col-lg-12 col-md-6 col-sm-6">
+                    <div className="main-menu">
+                        {menu.map((category) => (
+                            <MenuCont data={category} onClick={() => handleMenuClick(category)} key={category} />
+                        ))}
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </>
-  );
+    );
 }
 
 export default MenuBar;

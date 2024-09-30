@@ -1,9 +1,16 @@
 img {
-    width: 50%;
+    width: 65%;
+    object-fit: contain;
 }
 
 .image-box {
     display: flex;
     justify-content: center;
+    
+}
+
+.Qty {
+    display: flex;
+    align-items: center;
     
 }
